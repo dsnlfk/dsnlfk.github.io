@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>git-fragment | 靓坤也叫牛贰</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="“mark一下”
+push不上master12345678$ git push -u origin masterTo git@github.com:******/Demo.git ! [rejected]        master -&amp;gt; master (non-fast-forward)error: failed to push some refs to &amp;apos;git@github.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git-fragment">
+<meta property="og:url" content="http://yoursite.com/2016/06/16/git-fragment/index.html">
+<meta property="og:site_name" content="靓坤也叫牛贰">
+<meta property="og:description" content="“mark一下”
+push不上master12345678$ git push -u origin masterTo git@github.com:******/Demo.git ! [rejected]        master -&amp;gt; master (non-fast-forward)error: failed to push some refs to &amp;apos;git@github.">
+<meta property="og:updated_time" content="2016-06-16T09:56:06.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git-fragment">
+<meta name="twitter:description" content="“mark一下”
+push不上master12345678$ git push -u origin masterTo git@github.com:******/Demo.git ! [rejected]        master -&amp;gt; master (non-fast-forward)error: failed to push some refs to &amp;apos;git@github.">
+  
+    <link rel="alternate" href="/atom.xml" title="靓坤也叫牛贰" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">靓坤也叫牛贰</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-git-fragment" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/16/git-fragment/" class="article-date">
+  <time datetime="2016-06-16T09:51:39.000Z" itemprop="datePublished">2016-06-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git-fragment
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>“mark一下”</p>
+<h2 id="push不上master"><a href="#push不上master" class="headerlink" title="push不上master"></a>push不上master</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br><span class="line">To git@github.com:******/Demo.git</span><br><span class="line"> ! [rejected]        master -&gt; master (non-fast-forward)</span><br><span class="line">error: failed to push some refs to &apos;git@github.com:******/Demo.git&apos;</span><br><span class="line">hint: Updates were rejected because the tip of your current branch is behind</span><br><span class="line">hint: its remote counterpart. Merge the remote changes (e.g. &apos;git pull&apos;)</span><br><span class="line">hint: before pushing again.</span><br><span class="line">hint: See the &apos;Note about fast-forwards&apos; in &apos;git push --help&apos; for details.</span><br></pre></td></tr></table></figure>
+<p>1.使用强制push的方法：</p>
+<p>$ git push -u origin master -f </p>
+<p>这样会使远程修改丢失，一般是不可取的，尤其是多人协作开发的时候。</p>
+<p>2.push前先将远程repository修改pull下来</p>
+<p>$ git pull origin master</p>
+<p>$ git push -u origin master</p>
+<p>3.若不想merge远程和本地修改，可以先创建新的分支：</p>
+<p>$ git branch [name]</p>
+<p>然后push</p>
+<p>$ git push -u origin [name]</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/16/git-fragment/" data-id="cipi4t6bu0002llxdwccdgpyi" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/06/16/git/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">git 配置多个SSH-Key</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/16/git-fragment/">git-fragment</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/16/git/">git 配置多个SSH-Key</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/16/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
