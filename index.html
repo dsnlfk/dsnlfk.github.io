@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>靓坤也叫牛贰的笔记</title>
+  <title>靓坤也叫牛贰</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="靓坤也叫牛贰的笔记">
+<meta property="og:title" content="靓坤也叫牛贰">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="靓坤也叫牛贰的笔记">
+<meta property="og:site_name" content="靓坤也叫牛贰">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="靓坤也叫牛贰的笔记">
+<meta name="twitter:title" content="靓坤也叫牛贰">
 <meta name="twitter:description">
   
-    <link rel="alternate" href="/atom.xml" title="靓坤也叫牛贰的笔记" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="靓坤也叫牛贰" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -36,8 +36,12 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">靓坤也叫牛贰的笔记</a>
+        <a href="/" id="logo">靓坤也叫牛贰</a>
       </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">我的笔记本</a>
+        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -51,9 +55,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -63,6 +67,46 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-rem" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/09/09/rem/" class="article-date">
+  <time datetime="2016-09-09T07:45:33.000Z" itemprop="datePublished">2016-09-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/09/rem/">rem页面适配思路剖析</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="rem是什么"><a href="#rem是什么" class="headerlink" title="rem是什么"></a>rem是什么</h3><p>rem是一个半相对单位，它相对的是html(或body)元素的font-size值，例如有html { font-size: 10px; }，则1rem = 10px。</p>
+<h3 id="rem适配理解"><a href="#rem适配理解" class="headerlink" title="rem适配理解"></a>rem适配理解</h3><p>当html元素的font-size是根据设备宽度自适应时，使用rem的页面也就会有自适应的特性。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">适配计算：window.innerWidth / 640 * 1000；  </span><br><span class="line">辅助理解：640 ／ 640 = 1px , 320 ／ 640 = 0.5px;  </span><br><span class="line">*1000: 增加页面精度表现，导致rem编写时，(元素值／1000)rem；</span><br></pre></td></tr></table></figure>
+<h3 id="0-64rem的理解"><a href="#0-64rem的理解" class="headerlink" title="0.64rem的理解"></a>0.64rem的理解</h3><p>0.64rem能刚好满屏(设计稿640px)的本质在于经过 html.fontSize 单位转化后(的px)等于window.innerWidth；<br>为达到上面效果，把设计稿640作为单位运算的条件如下：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">实际值(window.innerWidth) / 设计值(640) = rem转化的px / 编码采用设计值  </span><br><span class="line">rem转化的px = 编码采用设计值 * (实际值(window.innerWidth) / 设计值(640))</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/09/09/rem/" data-id="cisvgkccw0000ipxddd28h3xj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-howDynamicPrecipitation" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -97,7 +141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/09/07/howDynamicPrecipitation/" data-id="cissj9pgn0003bpxdlz1vwzeq" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/09/07/howDynamicPrecipitation/" data-id="cissj9pgn0003bpxdlz1vwzeq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -147,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/15/canvas-coding-routine/" data-id="cissj9pgc0000bpxdbcw8bnr2" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/08/15/canvas-coding-routine/" data-id="cissj9pgc0000bpxdbcw8bnr2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -184,7 +228,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/29/vue－frame/" data-id="cissj9pgo0004bpxd8bf1ia3z" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/07/29/vue－frame/" data-id="cissj9pgo0004bpxd8bf1ia3z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -232,7 +276,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/16/git-fragment/" data-id="cissj9pgl0002bpxdisc10be8" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/06/16/git-fragment/" data-id="cissj9pgl0002bpxdisc10be8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -271,7 +315,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/16/git/" data-id="cissj9pgi0001bpxdf8gf5lam" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/06/16/git/" data-id="cissj9pgi0001bpxdf8gf5lam" class="article-share-link">Share</a>
       
       
     </footer>
@@ -306,9 +350,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/09/09/rem/">rem页面适配思路剖析</a>
+          </li>
         
           <li>
             <a href="/2016/09/07/howDynamicPrecipitation/">动画效果如何沉淀的思考！</a>
@@ -326,10 +374,6 @@
             <a href="/2016/06/16/git-fragment/">git-fragment</a>
           </li>
         
-          <li>
-            <a href="/2016/06/16/git/">git 配置多个SSH-Key</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -343,7 +387,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>

@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>vue框架学习笔记 | 靓坤也叫牛贰</title>
+  <title>rem页面适配思路剖析 | 靓坤也叫牛贰</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="“mark一下”
-12345vue-cli  脚手架初始化 vue  视图－数据驱动vue-loader  webpack构建，定义了.vue文件中的code组织方式&amp;lt;template&amp;gt;、&amp;lt;script&amp;gt;、&amp;lt;style&amp;gt;vue-router  单页面应用中的路由vuex  数据管理中心，单向数据流方式">
+  <meta name="description" content="rem是什么rem是一个半相对单位，它相对的是html(或body)元素的font-size值，例如有html { font-size: 10px; }，则1rem = 10px。
+rem适配理解当html元素的font-size是根据设备宽度自适应时，使用rem的页面也就会有自适应的特性。  
+123适配计算：window.innerWidth / 640 * 1000；  辅助理解：640 ／">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue框架学习笔记">
-<meta property="og:url" content="http://yoursite.com/2016/07/29/vue－frame/index.html">
+<meta property="og:title" content="rem页面适配思路剖析">
+<meta property="og:url" content="http://yoursite.com/2016/09/09/rem/index.html">
 <meta property="og:site_name" content="靓坤也叫牛贰">
-<meta property="og:description" content="“mark一下”
-12345vue-cli  脚手架初始化 vue  视图－数据驱动vue-loader  webpack构建，定义了.vue文件中的code组织方式&amp;lt;template&amp;gt;、&amp;lt;script&amp;gt;、&amp;lt;style&amp;gt;vue-router  单页面应用中的路由vuex  数据管理中心，单向数据流方式">
-<meta property="og:updated_time" content="2016-07-29T07:25:58.000Z">
+<meta property="og:description" content="rem是什么rem是一个半相对单位，它相对的是html(或body)元素的font-size值，例如有html { font-size: 10px; }，则1rem = 10px。
+rem适配理解当html元素的font-size是根据设备宽度自适应时，使用rem的页面也就会有自适应的特性。  
+123适配计算：window.innerWidth / 640 * 1000；  辅助理解：640 ／">
+<meta property="og:updated_time" content="2016-09-09T08:43:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue框架学习笔记">
-<meta name="twitter:description" content="“mark一下”
-12345vue-cli  脚手架初始化 vue  视图－数据驱动vue-loader  webpack构建，定义了.vue文件中的code组织方式&amp;lt;template&amp;gt;、&amp;lt;script&amp;gt;、&amp;lt;style&amp;gt;vue-router  单页面应用中的路由vuex  数据管理中心，单向数据流方式">
+<meta name="twitter:title" content="rem页面适配思路剖析">
+<meta name="twitter:description" content="rem是什么rem是一个半相对单位，它相对的是html(或body)元素的font-size值，例如有html { font-size: 10px; }，则1rem = 10px。
+rem适配理解当html元素的font-size是根据设备宽度自适应时，使用rem的页面也就会有自适应的特性。  
+123适配计算：window.innerWidth / 640 * 1000；  辅助理解：640 ／">
   
     <link rel="alternate" href="/atom.xml" title="靓坤也叫牛贰" type="application/atom+xml">
   
@@ -70,10 +73,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-vue－frame" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-rem" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/07/29/vue－frame/" class="article-date">
-  <time datetime="2016-07-29T01:00:00.000Z" itemprop="datePublished">2016-07-29</time>
+    <a href="/2016/09/09/rem/" class="article-date">
+  <time datetime="2016-09-09T07:45:33.000Z" itemprop="datePublished">2016-09-09</time>
 </a>
     
   </div>
@@ -84,7 +87,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      vue框架学习笔记
+      rem页面适配思路剖析
     </h1>
   
 
@@ -92,12 +95,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>“mark一下”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vue-cli  脚手架初始化 </span><br><span class="line">vue  视图－数据驱动</span><br><span class="line">vue-loader  webpack构建，定义了.vue文件中的code组织方式&lt;template&gt;、&lt;script&gt;、&lt;style&gt;</span><br><span class="line">vue-router  单页面应用中的路由</span><br><span class="line">vuex  数据管理中心，单向数据流方式</span><br></pre></td></tr></table></figure>
+        <h3 id="rem是什么"><a href="#rem是什么" class="headerlink" title="rem是什么"></a>rem是什么</h3><p>rem是一个半相对单位，它相对的是html(或body)元素的font-size值，例如有html { font-size: 10px; }，则1rem = 10px。</p>
+<h3 id="rem适配理解"><a href="#rem适配理解" class="headerlink" title="rem适配理解"></a>rem适配理解</h3><p>当html元素的font-size是根据设备宽度自适应时，使用rem的页面也就会有自适应的特性。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">适配计算：window.innerWidth / 640 * 1000；  </span><br><span class="line">辅助理解：640 ／ 640 = 1px , 320 ／ 640 = 0.5px;  </span><br><span class="line">*1000: 增加页面精度表现，导致rem编写时，(元素值／1000)rem；</span><br></pre></td></tr></table></figure>
+<h3 id="0-64rem的理解"><a href="#0-64rem的理解" class="headerlink" title="0.64rem的理解"></a>0.64rem的理解</h3><p>0.64rem能刚好满屏(设计稿640px)的本质在于经过 html.fontSize 单位转化后(的px)等于window.innerWidth；<br>为达到上面效果，把设计稿640作为单位运算的条件如下：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">实际值(window.innerWidth) / 设计值(640) = rem转化的px / 编码采用设计值  </span><br><span class="line">rem转化的px = 编码采用设计值 * (实际值(window.innerWidth) / 设计值(640))</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/29/vue－frame/" data-id="cissj9pgo0004bpxd8bf1ia3z" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/09/09/rem/" data-id="cisvgkccw0000ipxddd28h3xj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -106,19 +112,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/15/canvas-coding-routine/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          canvas开发笔记
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/06/16/git-fragment/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/09/07/howDynamicPrecipitation/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">git-fragment</div>
+      <div class="article-nav-title">动画效果如何沉淀的思考！</div>
     </a>
   
 </nav>
